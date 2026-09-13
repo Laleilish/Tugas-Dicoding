@@ -41,9 +41,10 @@ body {
 }
 
 .navbar-container .nav-list {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .navbar-container .nav-list ul {
@@ -54,6 +55,10 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .navbar-container .nav-list li {
@@ -78,7 +83,7 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.39);
 }
 
-.navbar-container .navbar-profile-btn {
+.nav-list .navbar-profile-btn {
     margin-left: auto;
     margin-right: 4px;
     padding: 0.45rem 1.25rem;
@@ -98,7 +103,7 @@ body {
     transition: all 0.2s ease-in-out;
 }
 
-.navbar-container .navbar-profile-btn:hover {
+.nav-list .navbar-profile-btn:hover {
     background: rgba(255, 255, 255, 0.85);
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
 }
@@ -609,7 +614,7 @@ body {
         font-size: 13px;
     }
 
-    .navbar-container .navbar-profile-btn {
+    .nav-list .navbar-profile-btn {
         display: none;
     }
 
